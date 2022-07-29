@@ -1,0 +1,123 @@
+.portfolio {
+    background-color: #f3f3f3;
+    padding: 5% 10%;
+    min-height: 280px;
+    .porfolio-item {
+        padding: 50px;
+        background-color: #fff;
+        height: 545px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+
+        .icon {
+            font-size: 5rem;
+            color: $color-primary;
+        }
+
+        .title {
+            margin-top: 30px;
+            height: 300px;
+            h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                font-family: "Public", sans-serif;
+                text-transform: capitalize;
+                height: auto;
+                width: 170px;
+            }
+            p {
+                font-size: 16px;
+                color: #51668a;
+                font-family: "Public", sans-serif;
+                text-transform: capitalize;
+                font-weight: 500;
+                line-height: 32px;
+            }
+        }
+        .read-more {
+            color: #000;
+            height: 27px;
+            width: 271px;
+            font-size: 16px;
+            line-height: 27px;
+            text-align: left;
+            margin: 30px 0 0 0;
+            display: flex;
+            div {
+                margin-top: 14px;
+                width: 0;
+                height: 2px;
+                background-color: #fff;
+                transition: all 300ms linear 0ms;
+            }
+        }
+        .pricing-tabl .price-title > h3 {
+            color: black;
+        }
+        .read-more:hover {
+            p {
+                margin-left: 10px;
+                transition: all 300ms linear 0ms;
+            }
+            div {
+                width: 20px;
+            }
+        }
+    }
+    .elementor-background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -2;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: center !important;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+    .porfolio-item:hover {
+        z-index: 0;
+        background: none;
+        .elementor-background-image {
+            transform: scale(1);
+        }
+        // .col-img {
+        //   filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(75deg)
+        //     brightness(100%) contrast(100%);
+        // }
+        .elementor-background-overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .elementor-background-overlay {
+            opacity: 0.85;
+            transition: all 0.5;
+            background-color: #00c881;
+        }
+        h3,
+        p,
+        .read-more,
+        .icon {
+            color: #fff;
+        }
+    }
+    // .porfolio-item .col-img {
+    //   filter: invert(38%) sepia(85%) saturate(2596%) hue-rotate(131deg)
+    //     brightness(105%) contrast(94%);
+    // }
+}

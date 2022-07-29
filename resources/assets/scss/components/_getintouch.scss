@@ -1,0 +1,75 @@
+.get-in-touch {
+    background-color: $color-white;
+    .backround {
+        background-image: url(https://demo.cmssuperheroes.com/themeforest/mintech/wp-content/uploads/2020/05/theme-04.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: auto;
+        min-width: auto;
+        .contact {
+            padding: 70px;
+            height: 100%;
+            background-color: transparent;
+            background-image: linear-gradient(
+                180deg,
+                rgba(0, 200, 129, 0.84) 0%,
+                #00c881 100%
+            );
+            opacity: 0.95;
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+            p {
+                font-size: 16px;
+            }
+            .btn {
+                border: 1px solid $color-white;
+                text-align: left;
+                padding: 5px 30px 5px 30px;
+                height: 71px;
+                vertical-align: center;
+                line-height: 61px;
+                word-spacing: 0px;
+                font-weight: 700;
+                border-radius: 2px;
+                font-size: 15px;
+                white-space: nowrap;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+                background-color: transparent;
+                background-image: linear-gradient(
+                    180deg,
+                    rgba(0, 200, 129, 0.84) 0%,
+                    #00c881 100%
+                );
+                color: #fff !important;
+                z-index: 1;
+            }
+            .btn:after {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 100%;
+                border-radius: 2px;
+                top: 0;
+                right: 0;
+                z-index: -1;
+                background: #000;
+                transition: all 0.3s ease;
+            }
+            .btn:hover:after {
+                left: 0;
+                width: 100%;
+            }
+            .btn:active {
+                top: 2px;
+            }
+        }
+        @media screen and (max-width: 390px) {
+            .contact {
+                padding: 30px;
+            }
+        }
+    }
+}

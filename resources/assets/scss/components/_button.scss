@@ -1,0 +1,41 @@
+.btn-outline-primary {
+    @include btn-outline-style($color-primary);
+}
+
+.btn-outline-warning {
+    @include btn-outline-style($color-warning);
+}
+
+.btn-outline-grey {
+    @include btn-outline-style($color-grey);
+}
+
+.btn-outline-danger {
+    @include btn-outline-style($color-danger);
+}
+
+.btn-outline-blue {
+    @include btn-outline-style($color-blue);
+}
+
+.btn-primary {
+    @include btn-bg-style($color-primary);
+}
+
+.btn-grey {
+    @include btn-bg-style($color-grey);
+}
+
+.btn-warning {
+    @include btn-bg-style($color-warning);
+}
+
+.btn-danger {
+    @include btn-bg-style($color-danger);
+}
+
+.btn-blue {
+    @include btn-bg-style($color-blue);
+}
+
+

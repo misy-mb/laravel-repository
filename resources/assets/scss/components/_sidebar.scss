@@ -1,0 +1,41 @@
+.sidebar {
+
+    position: fixed !important;
+    left: 0 !important;
+    z-index: 900;
+    //background-color: $color-white !important;
+    height: 100%;
+    overflow: auto;
+
+    &-wrapper {
+
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+    }
+
+    nav,
+    .nav-item-spacer {
+        flex: 1 1;
+    }
+
+}
+
+.sidebar-collapsed {
+
+    padding-left: $sidebar-collapsed !important;
+    transition: all .3s ease !important;
+}
+
+.sidebar-not-collapsed {
+
+    padding-left: $sidebar-not-collapsed !important;
+    transition: all .3s ease !important;
+}
+
+//.sidebar-drawer {
+//    .ant-drawer-body {
+//        padding: 0 !important;
+//    }
+//}
+

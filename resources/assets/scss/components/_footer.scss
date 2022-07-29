@@ -1,0 +1,75 @@
+.footer {
+    width: 100%;
+    .gutter-box {
+        width: 100%;
+        color: #fff;
+        .ant-input-lg{
+            background-color: #061B49;
+            border: 1px solid #061B49;
+            padding: 8px 20px 8px 20px;
+            border-radius: 0px;
+            color: #FFF;
+        }
+        .ant-btn-lg{
+            background-color: #07B35F;
+            color: #FFF;
+            display: inline-block;
+            border-radius: 0px;
+            font-family: "Roboto",sans-serif;
+            font-size: 15px;
+        }
+        .detail {
+            padding: 20px 20px;
+            margin-left: -50px;
+        }
+        .dropdown-submenu{
+            margin-left: 2px;
+        }
+        .submenu {
+            position: relative;
+            padding: 1px;
+        }
+        h2 {
+            margin-left: 40px;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+
+        .logo {
+            width: 210px;
+        }
+        li{
+            list-style: none;
+        }
+    }
+    background-color: #000 !important;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+    height: auto;
+    padding: 55px 0 28px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    //min-height: 100%;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+

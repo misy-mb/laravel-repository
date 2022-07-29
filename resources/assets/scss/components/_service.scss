@@ -1,0 +1,56 @@
+.service {
+    background-color: #f3f3f3;
+    padding: 30px auto;
+    font-size: 16px;
+    .border{
+        height: 2px;
+        margin: 20px auto 20px;
+        position: relative;
+        width: 80px;
+        background: #c7cfcb;
+        margin-bottom: 80px;
+    }
+    .list li {
+        list-style: none;
+        margin-left: -40px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 26px;
+        font-family: "Roboto", sans-serif;
+        color: #51668a;
+        list-style: none;
+    }
+    .list .icon {
+        width: 26px;
+        height: 26px;
+        border-radius: 26px;
+        border: 2px solid #07b35f;
+        line-height: 22px;
+        text-align: center;
+        font-size: 12px;
+        margin-right: 16px;
+        padding: 2px;
+    }
+    .list div {
+        width: 26px;
+        height: 26px;
+        border-radius: 26px;
+        border: 2px solid #07b35f;
+        box-sizing: border-box;
+        padding: 3px 2px 4px 7px;
+        transform: rotate(40deg);
+
+        &::before {
+            content: "";
+            width: 40%;
+            height: 70%;
+            border-width: 0 0.8px 0.8px 0;
+            border-style: solid;
+            border-color: #222;
+            transition: 0.2s ease;
+            display: block;
+            transform-origin: 100% 0;
+        }
+    }
+}

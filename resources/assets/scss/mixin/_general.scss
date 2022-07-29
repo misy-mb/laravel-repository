@@ -1,0 +1,45 @@
+@mixin bg-color($color) {
+    background-color: $color !important;
+}
+
+@mixin cc-color($color) {
+    color: $color !important;
+}
+
+@mixin center-item() {
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+}
+
+@mixin centerVerticalHorizontal() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centerVertical() {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+@mixin centerHorizontal() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin trans-duration($time) {
+    -webkit-transition-duration: $time;
+    transition-duration: $time;
+}
+
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    // IE8 filter
+    $opacity-ie: ($opacity * 100);
+    filter: #{alpha(opacity=$opacity-ie)};
+}

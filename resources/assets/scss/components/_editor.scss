@@ -1,0 +1,32 @@
+#word-count-div {
+    .ck.ck-word-count {
+        display: flex;
+        justify-content: flex-end;
+        background: var(--ck-color-toolbar-background);
+        padding: var(--ck-spacing-small) var(--ck-spacing-standard);
+        border: 1px solid var(--ck-color-toolbar-border);
+        border-top-width: 0;
+        border-radius: 0 0 var(--ck-border-radius);
+    }
+
+    .ck.ck-word-count .ck-word-count__words {
+        margin-right: var(--ck-spacing-standard);
+    }
+}
+
+#fullscreenoverlay{
+    overflow: hidden;
+}
+#fullscreeneditor{
+    position: fixed !important;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    z-index:1000;
+}
+#fullscreeneditor .ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline, #fullscreeneditor .ck.ck-editor__main {
+    height: 100%;
+}
+
+

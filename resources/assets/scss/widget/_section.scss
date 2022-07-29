@@ -1,0 +1,52 @@
+.page-section {
+    padding: 6% 10%;
+    background-color: #FFF;
+    .sub-section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+
+        h2 {
+            color: $color-dark;
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 40px;
+        }
+
+        h5 {
+            color: #07B35F;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 25px;
+            color: #51668A;
+        }
+
+        h4 {
+            color: black;
+            margin-left: 10px;
+            font-size: 1.5rem;
+        }
+    }
+
+    .sub-section:nth-child(odd) {
+        //background: $color-white;
+        //position: absolute;
+        //z-index: 999;
+        //content: '';
+        //top: 0;
+        //left: 0;
+        //right: 0;
+        //bottom: 0;
+    }
+
+    .sub-section:nth-child(even) {
+        //background: #f3f3f3;
+    }
+}

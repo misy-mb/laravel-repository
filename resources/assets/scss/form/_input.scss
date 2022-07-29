@@ -1,0 +1,17 @@
+.input-border-bottom {
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: $color-primary;
+    border-bottom-width: 2px;
+    border-radius: unset;
+
+    &:focus {
+        border-color: $color-primary;
+        outline: 0;
+        -webkit-box-shadow: unset !important;
+        box-shadow: unset !important;
+    }
+
+}

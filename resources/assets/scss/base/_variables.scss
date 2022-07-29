@@ -1,0 +1,81 @@
+// Base Colors
+$color-primary: #07b35f !default;
+$color-success: #52C41A !default;
+$color-warning: #FADB14 !default;
+$color-danger: #F5222D !default;
+$color-dark: #141414 !default;
+$color-white: #FFFFFF !default;
+$color-grey: #A9A9A9 !default;
+$color-darkgrey: #808080 !default;
+$color-blue: #1a73e8 !default;
+$color-dark-blue: #0f2c5d !default;
+
+// Neutral Colors
+$color-gray-1: #FFFFFF;
+$color-gray-2: #FAFAFA;
+$color-gray-3: #F5F5F5;
+$color-gray-4: #f2f3f8;
+$color-gray-5: #D9D9D9;
+$color-gray-6: #BFBFBF;
+$color-gray-7: #8C8C8C;
+$color-gray-8: #595959;
+$color-gray-9: #434343;
+$color-gray-10: #262626;
+$color-gray-11: #1F1F1F;
+$color-gray-12: #141414;
+$color-muted: $color-gray-7;
+
+// Font Size;
+$fs-mini: 12px;
+$fs-regular: 14px;
+$fs-medium: 16px;
+$fs-large: 24px;
+$fs-extra-large: 36px;
+
+// Font Weights
+$fw-regular: 400;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+//breakpoints
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+$breakPointXs: 768px;
+$breakPointSm: 992px;
+$breakPointMd: 1200px;
+
+// Ant Design Vars
+$btn-height-base: 40px;
+$btn-height-lg: 48px;
+$btn-height-sm: 34px;
+$btn-padding-base: 0px 15px;
+$btn-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+$btn-border-radius-base: 6px;
+$btn-font-size-base: 12px;
+$btn-font-size-lg: 16px;
+$btn-font-size-sm: 12px;
+$btn-font-weight: $fw-bold;
+$input-color: $color-gray-7;
+$input-border-color: $color-gray-5;
+$input-hover-border-color: $color-primary;
+$input-height-base: $btn-height-base;
+$input-height-lg: $btn-height-lg;
+$input-height-sm: $btn-height-sm;
+$select-color: $color-gray-7;
+$select-border-color: $color-gray-5;
+$select-hover-border-color: $color-primary;
+
+$shadow-0: none;
+$shadow-1: 0px 20px 27px rgba(0, 0, 0, 0.05);
+$shadow-2: 0px 4px 6px rgba(0, 0, 0, 0.12);
+$shadow-3: 0px 5px 10px rgba(0, 0, 0, 0.12);
+
+//sidebar length
+$sidebar-collapsed: 80px !default;
+$sidebar-not-collapsed: 220px !default;

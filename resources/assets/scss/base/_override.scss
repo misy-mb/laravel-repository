@@ -1,0 +1,39 @@
+html {
+    --antd-wave-shadow-color: $color-primary ;
+}
+
+[ant-click-animating-without-extra-node='true']::after,
+.ant-click-animating-node {
+    box-shadow: 0 0 0 0 var(--antd-wave-shadow-color) ;
+}
+
+body {
+    //font-family: 'Roboto', 'Battambang', sans-serif !important;
+    letter-spacing: -.3px;
+    height: 100%;
+}
+
+a {
+    color: $color-primary ;
+}
+::-moz-selection {
+    background: $color-primary ;
+}
+::selection {
+    background: $color-primary ;
+}
+.ant-click-animating-node {
+    box-shadow: 0 0 0 0 $color-primary ;
+}
+@-webkit-keyframes waveEffect
+{
+    100% {
+        box-shadow: 0 0 0 6px var(--antd-wave-shadow-color) ;
+    }
+}
+@keyframes waveEffect
+{
+    100% {
+        box-shadow: 0 0 0 $color-primary ;
+    }
+}

@@ -1,0 +1,148 @@
+// @font-face {
+//     font-family: "Roboto", sans-serif;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-display: swap;
+//     src: local("Roboto"),
+//         url("~assets/fonts/Roboto-Regular.ttf") format("truetype");
+// }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $color-white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $color-grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $color-darkgrey;
+}
+
+::selection {
+    color: $color-white;
+    background: lighten($color-blue, 0.5);
+}
+
+p {
+    font-size: $fs-regular;
+}
+
+// Font & Text
+.font-regular {
+    font-weight: $fw-regular !important;
+}
+.font-semibold {
+    font-weight: $fw-semibold !important;
+}
+.font-bold {
+    font-weight: $fw-bold !important;
+}
+.text-sm {
+    font-size: $fs-mini !important;
+}
+.text-md {
+    font-size: $fs-regular !important;
+}
+.text-md {
+    font-size: $fs-medium !important;
+}
+.text-lg {
+    font-size: $fs-large !important;
+}
+.text-xlg {
+    font-size: $fs-extra-large !important;
+}
+.text-50px {
+    font-size: 50px;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+//Color & Background Color
+.color-primary {
+    color: $color-primary !important;
+}
+
+.color-success {
+    color: $color-success !important;
+}
+
+.color-warning {
+    color: $color-warning !important;
+}
+
+.color-danger {
+    color: $color-danger !important;
+}
+
+.color-black {
+    color: $color-dark !important;
+}
+
+.color-white {
+    color: $color-white !important;
+}
+
+.color-grey {
+    color: $color-grey !important;
+}
+
+.color-darkgrey {
+    color: $color-darkgrey !important;
+}
+
+.bg-color-white {
+    background-color: $color-white !important;
+}
+
+.bg-color-primary {
+    background-color: $color-primary !important;
+}
+
+.bg-light-color {
+    background: $color-gray-4 !important;
+}
+
+.border-primary {
+    border: 1px solid $color-primary !important;
+}
+
+.border-b {
+    border-bottom: 1px solid  $color-gray-4 !important;
+}
+
+//Position
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
