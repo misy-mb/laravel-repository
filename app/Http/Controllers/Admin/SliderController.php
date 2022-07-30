@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Slider;
+use App\Repositories\Interfaces\slider\SliderInterface;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\File;
@@ -10,13 +11,25 @@ use Illuminate\Support\Facades\File;
 class SliderController extends Controller
 {
     /**
+     * @var SliderInterface
+     */
+    private $slider;
+
+    /**
+     * TodoController constructor.
+     */
+    public function __construct(SliderInterface $slider)
+    {
+        $this->slider = $slider;
+    }
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $slider = Slider::orderBy('id', 'desc')->get();
+        $slider = $this->slider->getAll();
          return view('admin.pages.slider.index', [
         'slider' => $slider]);
     }
@@ -28,8 +41,7 @@ class SliderController extends Controller
      */
     public function create()
     {
-        $Sliders = Slider::orderBy('id', 'desc')->get();
-        return view('admin.pages.slider.create',['Sliders' => $Sliders]);
+        return view('admin.pages.slider.create');
     }
 
     /**
@@ -66,7 +78,7 @@ class SliderController extends Controller
      */
     public function show($id)
     {
-        $slider = Slider::where('id',$id)->first();
+        $slider= $this->slider->getById($id);
         return view('admin.pages.slider.show',['slider' => $slider]);
     }
 
@@ -78,7 +90,7 @@ class SliderController extends Controller
      */
     public function edit($id)
     {
-        $slider = Slider::find($id);
+        $slider= $this->slider->getById($id);
         return view('admin.pages.slider.edit', ['slider' => $slider]);
     }
 

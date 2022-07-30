@@ -67,7 +67,7 @@
                                                         width="50" height="40">
                                                 </td>
                                                 <td>{{ $sl->link }}</td>
-                                                <td>
+                                                <td class="text-center">
                                                     <form action="{{ route('slider.destroy', $sl->id) }}" method="Post">
                                                         <a class="btn btn-outline-success"
                                                             href="{{ route('slider.edit', $sl->id) }}"><i
