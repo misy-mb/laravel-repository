@@ -35,6 +35,11 @@
                                     {{ session('message') }}
                                 </div>
                             @endif
+                            @if (session('delete'))
+                                <div class="alert alert-danger mb-sm-5 mt-sm-5">
+                                    {{ session('delete') }}
+                                </div>
+                            @endif
                             <div class="card-header">
                                 <h3 class="card-title">DataTable</h3>
                             </div>
@@ -59,14 +64,10 @@
                                             <td>{{ $slider->description }}</td>
                                         </tr>
                                         <tr>
-                                            <th>link</th>
-                                            <td>{{ $slider->link }}</td>
-                                        </tr>
-                                        <tr>
                                             <th>Thumbnail</th>
                                             <td>
                                                 <img src="{{ asset('storage/slider/' . $slider->thumbnail) }}"
-                                                    width="350" height="240">
+                                                     width="200" height="140">
                                             </td>
                                         </tr>
                                     </tbody>

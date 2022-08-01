@@ -54,7 +54,6 @@
                                             <th>Id</th>
                                             <th>Name</th>
                                             <th>Role</th>
-                                            <th>Slug</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -68,8 +67,7 @@
                                                         <span class="badge badge-info ">{{ $item->name }}</span>
                                                     @endforeach
                                                 </td>
-                                                <td>{{ $rl->slug }}</td>
-                                                <td>
+                                                <td class="text-center">
                                                     <form action="{{ route('role.destroy', $rl->id) }}" method="Post">
                                                         <a class="btn btn-outline-success"
                                                             href="{{ route('role.edit', $rl->id) }}"><i

@@ -52,7 +52,7 @@ class TodoController extends Controller
      */
     public function store(Request $request): \Illuminate\Http\RedirectResponse
     {
-        $todo = $this->todo->create($request->input());
+        $this->todo->create($request->input());
         return redirect()->route('todo.index')->with('message','User created successfully');
     }
 

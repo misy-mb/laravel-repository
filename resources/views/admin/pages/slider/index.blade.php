@@ -37,6 +37,11 @@
                                 {{ session('message') }}
                             </div>
                         @endif
+                        @if (session('delete'))
+                            <div class="alert alert-danger mb-sm-5 mt-sm-5">
+                                {{ session('delete') }}
+                            </div>
+                        @endif
                         <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">DataTable</h3>
